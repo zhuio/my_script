@@ -21,28 +21,9 @@ sudo apt-get install git -y
 
 # Install dependencies
 sudo apt-get install git python-appindicator python-xdg python-pexpect python-gconf python-gtk2 python-glade2 libxxf86vm1
-
-# Download xflux-gui
-cd /tmp
-git clone "https://github.com/xflux-gui/xflux-gui.git"
-cd xflux-gui
-python download-xflux.py
-
-# EITHER install globally
-sudo python setup.py install
-# EXCLUSIVE OR, install in your home directory. The binary installs
-# into ~/.local/bin, so be sure to add that to your PATH if installing locally.
-python setup.py install --user
-
-# Run flux
-fluxgui
-
-# ============================================================
-# 视频播放
-# ============================================================
-
-# 安裝 VLC 影片播放器
-sudo apt-get install vlc -y
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+xz-utils tk-dev
 
 # ============================================================
 # python环境
