@@ -25,3 +25,8 @@ sudo dpkg-reconfigure locales
 
 sudo apt-get install ttf-wqy-zenhei
 
+sudo apt-get install libffi-dev
+sudo apt-get install libxml2-dev
+sudo apt-get install libxslt1-dev
+sudo apt-get install python-dev
+sudo apt-get install libssl-dev
